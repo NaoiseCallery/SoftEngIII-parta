@@ -3,10 +3,16 @@ package ie.nuigalway.callery.mavenproject1;
 import java.util.ArrayList;
 
 public class Module {
+    
+    /*
+    A module class, which should contain information such as module name, id (e.g.
+CT417), list of students, courses it is associated with).
+    */
+    
     private String moduleName = "";
-    private ArrayList<Student> students = new ArrayList<>();
     private ArrayList<CourseProgramme> courses = new ArrayList<>();
-    private int counter;
+    private ArrayList<Student> students = new ArrayList<>();
+    private int counter = 0;
     
     public Module(String n,Student s,CourseProgramme c ) {
         this.moduleName = n;
