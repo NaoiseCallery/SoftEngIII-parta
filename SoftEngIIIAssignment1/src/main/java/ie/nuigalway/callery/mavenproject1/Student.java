@@ -1,7 +1,5 @@
 package ie.nuigalway.callery.mavenproject1;
 
-import org.joda.time.DateTime;
-
 /*
 a. A student class should contain some attributes such as (Name, Age, DOB, ID,
 username, courses and modules registered for, etc.).
@@ -12,7 +10,7 @@ concatenating their name and age.
 public class Student {
     private String name = "";
     private int age = 0;
-    private String dob;
+    private String dob = "";
     private int id = 0;
     private String username = "";
     CourseProgramme courses;

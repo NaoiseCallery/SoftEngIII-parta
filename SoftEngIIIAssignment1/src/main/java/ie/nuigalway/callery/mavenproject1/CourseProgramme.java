@@ -5,7 +5,7 @@ import org.joda.time.DateTime;
 
 public class CourseProgramme {
     
-    private String courseName;
+    private String courseName = "";
     private DateTime start;
     private DateTime end;
     private ArrayList<Module> modules = new ArrayList<>();
