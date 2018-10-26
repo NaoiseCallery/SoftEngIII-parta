@@ -5,9 +5,9 @@
  */
 package ie.nuigalway.callery.mavenproject1;
 
-/**
- *
- * @author Naoise Callery
+/*
+b. A module class, which should contain information such as module name, id (e.g.
+CT417), list of students, courses it is associated with).
  */
 public class Module {
     //A module class, which should contain information such as module name, id (e.g.

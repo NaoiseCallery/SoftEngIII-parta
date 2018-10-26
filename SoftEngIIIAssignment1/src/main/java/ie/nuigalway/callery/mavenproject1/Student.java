@@ -2,18 +2,29 @@ package ie.nuigalway.callery.mavenproject1;
 
 import org.joda.time.DateTime;
 
-/**
- *
- * @author Naoise Callery
- */
+/*
+a. A student class should contain some attributes such as (Name, Age, DOB, ID,
+username, courses and modules registered for, etc.).
+A specific method (getUsername()) will generate the student’s username by
+concatenating their name and age. 
+*/
+
 public class Student {
     private String name = "";
     private int age = 0;
-    private DateTime dob;
+    private String dob;
     private int id = 0;
     private String username = "";
-    //courses
-    //modules registered
+    CourseProgramme courses;
+    
+    public Student(String n,int a, String d, int i, CourseProgramme c){
+        this.name = n;
+        this.age = a;
+        this.dob = d;
+        this.id = i;
+        this.courses = c;
+        this.username = createUsername(name, age);
+    }
     
     public String getName()
     {
@@ -25,7 +36,7 @@ public class Student {
         return this.age;
     }
     
-    public DateTime getDOB()
+    public String getDOB()
     {
         return this.dob;
     }
@@ -40,8 +51,9 @@ public class Student {
         return this.username;
     }
             
-    public void createUsername(String name, int age)
+    public String createUsername(String name, int age)
     {
         this.username = this.name+(char)this.age;
+        return username;
     }
 }
