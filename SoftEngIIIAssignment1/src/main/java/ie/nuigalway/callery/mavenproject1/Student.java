@@ -1,5 +1,7 @@
 package ie.nuigalway.callery.mavenproject1;
 
+import org.joda.time.DateTime;
+
 /**
  *
  * @author Naoise Callery
@@ -7,11 +9,11 @@ package ie.nuigalway.callery.mavenproject1;
 public class Student {
     private String name = "";
     private int age = 0;
-    private String dob = "0/0/0";
+    private DateTime dob;
     private int id = 0;
     private String username = "";
-    courses
-    modules registered
+    //courses
+    //modules registered
     
     public String getName()
     {
@@ -23,7 +25,7 @@ public class Student {
         return this.age;
     }
     
-    public String getDOB()
+    public DateTime getDOB()
     {
         return this.dob;
     }
