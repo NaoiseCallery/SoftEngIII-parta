@@ -72,14 +72,14 @@ added as a project dependency.
     }
     
     public Student[] getStudent() {
-        Student[] res = new Student[students.size()];
+        Student[] stu = new Student[students.size()];
         
         counter = 0;
         while(counter < students.size()){
-            res[counter] = students.get(counter);
+            stu[counter] = students.get(counter);
             counter++;
         }
-        return res;
+        return stu;
     }
 
     public void setStudents(Student[] s) {
